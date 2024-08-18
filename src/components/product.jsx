@@ -27,7 +27,7 @@ export default function Product({filterLocation,setFilterLocation,search,setSear
       }
     
     }else{
-      if(search=''){
+      if(search==''){
         const result=await getLocation(filterLocation)
         console.log(result)
         setProduct(result)
